@@ -1,0 +1,95 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0 5em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 0.5em;
+    padding: 1em 0;
+}
+
+
+h1, h3{
+    background-color: rgb(54, 88, 168);
+    color: white;
+    padding: 0.8em 1em;
+    text-align: center;
+}
+
+h3{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    border-bottom: 1px solid rgb(58, 53, 53);
+    padding-bottom: 10px;
+}
+
+header nav{
+    background-color: rgb(58, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav a{
+    color: white;
+    font: inherit;
+}
+
+.yellow-text{
+    color: rgb(243, 243, 61);
+}
+
+footer{
+    background-color: rgb(54, 88, 168);
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+
+.card{
+    border: 1px solid rgb(177, 172, 172);
+    border-radius: 10px;
+}
+
+.card > div{
+    padding: 2em;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bio img{
+    float: right;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.flag{
+    display: flex;
+    gap: 20px;
+}
+
+.flag span{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+
+.flag img{
+    width: 150px;
+}
