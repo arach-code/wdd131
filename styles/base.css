@@ -93,3 +93,16 @@ footer{
 .flag img{
     width: 150px;
 }
+
+.side-nav{
+    padding: 1em 0;
+}
+
+
+
+li{
+    color: black;
+    display: block;
+    padding: 0.5em 1em;
+    list-style-position: inside;
+}
