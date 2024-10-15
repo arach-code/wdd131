@@ -1,0 +1,141 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root{
+  --primary-color: rgb(58, 164, 107);
+  --secondary-color: rgb(222, 39, 39);
+}
+
+header{
+  background-color: var(--secondary-color);
+  padding: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  top: 0;
+  border-bottom:  20px solid var(--primary-color);
+}
+
+
+
+.content-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section p:nth-of-type(1){
+  font-weight: bold;
+  margin-right: 5px;
+  text-align: right;
+  min-width: 100px;
+}
+
+.content-section p{
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  padding: 7px 0;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+footer{
+  padding: 4em;
+}
+
+main{
+  position: relative;
+}
+
+
+.card{
+  background-color: white;
+  height: fit-content;
+  padding: 1em;
+  opacity: 0.8;
+}
+
+
+
+.card > div{
+  padding: 10px;
+}
+
+
+.heading{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 1em;
+  position: relative;
+  left: -25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.lowercase{
+  text-transform: lowercase !important;
+}
+
+.heading img{
+  height: 50px;
+}
+
+footer{
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5em;
+}
+
+
+
+.data{
+  border-top: 5px solid var(--secondary-color);
+}
+
+
+@media screen and (min-width: 960px) {
+  .data{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    border-top: none;
+  }
+
+
+  .weather{
+    position: absolute;
+    right: 20px;
+    bottom: 15vw;
+  }
+
+  .heading{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+    justify-content: start;
+    flex-direction: row;
+  }
+}

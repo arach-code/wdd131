@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place</title>
+  <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+  <header>
+    <h1>madagascar</h1>
+  </header>
+
+  <main>
+    <picture>
+      <source media="(max-width: 959px)" srcset="images/place-480.webp" />
+      <source media="(min-width: 960px)" srcset="images/place-960.webp" />
+      <img class="hero" src="images/" alt="Wild animals" />
+    </picture>
+
+    <div class="data card">
+      <h1 class="heading">data</h1>
+
+      <div>
+        <section  class="content-section">
+          <p>Area:</p>
+          <p class="lowercase">587,041 sq km</p>
+        </section>
+        <section  class="content-section">
+          <p>population:</p>
+          <p>27,691,018</p>
+        </section>
+        <section  class="content-section">
+          <p>capital:</p>
+          <p>antananarivo</p>
+        </section>
+        <section  class="content-section">
+          <p>languages:</p>
+          <p>malagasy, french</p>
+        </section>
+        <section  class="content-section">
+          <p>currency:</p>
+          <p>malagsy ariary</p>
+        </section>
+        <section  class="content-section">
+          <p>time zone:</p>
+          <p>UTC+3</p>
+        </section>
+        <section  class="content-section">
+          <p>calling code:</p>
+          <p>+261</p>
+        </section>
+        <section  class="content-section">
+          <p>internet TLD:</p>
+          <p class="lowercase">.mg</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="weather card">
+      <section class="heading">
+        <h1>weather</h1>
+        <img src="images/weather.svg" alt="">
+      </section>
+      <div>
+        <section class="content-section">
+          <p>temperature:</p>
+          <p>10 &deg;C</p>
+        </section>
+        <section  class="content-section">
+          <p>conditions:</p>
+          <p>partly cloudy</p>
+        </section>
+        <section  class="content-section">
+          <p>wind:</p>
+          <p class="lowercase">5 km/h</p>
+        </section>
+        <section  class="content-section">
+          <p>wind chill:</p>
+          <p><span class="wind-chill"></span> &deg;C</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span class="currentyear"></span> &#127800; Arach Abel &#127800; Madagascar</p>
+    <p class="yellow-text">Last Modified: 15/October/2024 08:55PM</p>
+  </footer>
+
+  <script src="/scripts/getdates.js" defer></script>
+  <script src="/scripts/place.js" defer></script>
+</body>
+</html>
