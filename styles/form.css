@@ -1,0 +1,118 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root{
+  --primary-color: rgb(28, 15, 30);
+  --secondary-color: rgb(222, 222, 222);
+}
+
+
+form{
+  background-color: var(--secondary-color);
+  padding: 1em;
+  min-height: 100vh;
+}
+
+form > section {
+  margin: 20px 0;
+}
+
+
+header{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+
+footer{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: large;
+}
+
+input, textarea, select{
+  font-size: large;
+}
+
+textarea{
+  height: 120px;
+  resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  height: 24px;
+  width: 24px;
+}
+
+
+input[type="radio"]{
+  display: block;
+  margin: 0 auto;
+}
+
+.rate{
+  text-align: center;
+  width: max-content;
+}
+
+input[type="submit"]{
+  font-size: x-large;
+  text-transform: capitalize;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+
+.full-width{
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+
+.review{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  :root{
+    font-size: x-large;
+  }
+
+  header, footer, form{
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+
+  header, footer{
+    padding: 2em;
+  }
+}

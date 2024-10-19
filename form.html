@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>product review</h1>
+  </header>
+  <form method="get" action="review.html">
+    <section>
+      <label for="productName">Product Name</label>
+      <select name="productName" id="productName" class="full-width" required>
+        <option value="" selected disabled>Choose a Product...</option>
+      </select>
+    </section>
+
+
+    <section>
+      <label for="rating">Overall Rating</label>
+      <div class="rating">
+        <div class="rate">
+          <label>&star;</label>
+          <input type="radio" name="rating" id="rating-1" required>
+        </div>
+
+        <div class="rate">
+          <label>&star; &star;</label>
+          <input type="radio" name="rating" id="rating-2" required>
+        </div>
+
+        <div class="rate">
+          <label>&star; &star; &star;</label>
+          <input type="radio" name="rating" id="rating-3" required>
+        </div>
+
+        <div class="rate">
+          <label>&star; &star; &star; &star;</label>
+          <input type="radio" name="rating" id="rating-4" required>
+        </div>
+
+        <div class="rate">
+          <label>&star; &star; &star; &star; &star;</label required>
+          <input type="radio" name="rating" id="rating-5">
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <label for="installationDate">Date of Installation</label>
+      <input name="installationDate" id="installationDate" type="date" class="full-width" required>
+    </section>
+
+
+    <section>
+      <p>Which features did you find useful in the product? <span>(check all that apply)</span></p>
+      <div class="feature">
+        <input type="checkbox" name="features" id="features-durability">
+        <label for="features-durability">Duraility</label>
+      </div>
+
+      <div class="feature">
+        <input type="checkbox" name="features" id="features-ease-of-use">
+        <label for="features-ease-of-use">Ease of Use</label>
+      </div>
+      <div class="feature">
+        <input type="checkbox" name="features" id="features-performance">
+        <label for="features-performance">Performace</label>
+      </div>
+      <div class="feature">
+        <input type="checkbox" name="features" id="features-design">
+        <label for="features-design">Design</label>
+      </div>
+    </section>
+
+
+    <section>
+      <label for="review">Written review(optional)</label>
+      <textarea name="review" id="review" class="full-width"></textarea>
+    </section>
+
+
+    <section>
+      <label for="userName">Your name(optional)</label>
+      <input name="userName" id="userName" type="text" class="full-width">
+    </section>
+
+    <input type="submit" class="full-width" value="post review">
+  </form>
+  <footer>
+    <p>&copy;<span class="currentyear"></span> &#127800; Arach Abel &#127800; Madagascar</p>
+    <p class="yellow-text">Last Modified: 15/October/2024 08:55PM</p>
+  </footer>
+
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</body>
+</html>
