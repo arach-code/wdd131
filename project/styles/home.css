@@ -1,0 +1,279 @@
+
+
+.hero{
+  width: 100%;
+}
+
+.home-body{
+  background-color: whitesmoke;
+}
+
+.overview{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.card{
+  padding: 2em;
+  background-color: white;
+  color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  text-align: center;
+}
+
+
+main h2, 
+main h1,
+.card h2{
+  font-weight: 900;
+  font-size: x-large;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding: 0 1em;
+}
+
+main > div > h1{
+  font-size: xx-large;
+  color: var(--secondary-color);
+}
+
+
+.card h2 i{
+  font-weight: normal;
+  font-size: medium;
+}
+
+.primary-card{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.card > i,
+.small > i{
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card:not(.primary-card){
+  cursor: pointer;
+}
+
+.card p{
+  padding: 5px 0;
+}
+
+
+.card a{
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 10px;
+  display: block;
+}
+
+.tours{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.tours .small{
+  padding: 2em;
+}
+
+.stadium{
+ margin: 4em auto;
+}
+
+.small a{
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 10px;
+  display: block;
+}
+
+
+.club-news{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.news-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 2em;
+}
+
+.fans-card{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.fans-card img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fans-card section{
+  padding: 1em 2em;
+}
+
+.fans-card h1{
+  color: var(--primary-color);
+}
+
+
+.fans-card button{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+
+.news-card{
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.news-card h3{
+  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; 
+  overflow: hidden;
+}
+
+
+.news-card p{
+  text-transform: uppercase;
+  font-size: large;
+  margin-top: 15px;
+}
+
+
+.news-card img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.club-news{
+  border-bottom: 1px solid var(--secondary-color);
+  height: max-content;
+  padding-bottom: 6em;
+}
+
+.news-wrapper button{
+  background-color: white;
+  color: var(--secondary-color);
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  width: 100%;
+  padding: 15px;
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  top: -25px;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (min-width: 640px) {
+  .club-news{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .club-news{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-section{
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+  .tours{
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+
+
+  .overview{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+
+  .card{
+    position: relative;
+    top: -100px;
+  }
+
+
+  .stadium{
+    position: relative;
+    top: -50px;
+    margin: 0;
+  }
+
+
+  .card{
+    border-radius: 10px;
+    text-align: left;
+  }
+
+
+  .fans-card{
+    border-radius: 10px;
+  }
+
+  .fans-card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+
+  .news-section{
+    padding: 0;
+  }
+
+
+  .news-card{
+    margin-bottom: 0;
+  }
+
+
+  main h2, 
+  main h1,
+  .card h2{
+    padding: 0;
+  }
+}

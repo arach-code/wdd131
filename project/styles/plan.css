@@ -1,0 +1,175 @@
+h1{
+  text-align: center;
+}
+
+.colors{
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 3em;
+}
+
+.primary{
+  padding: 2em 5em;
+  background-color: #F2CE16;;
+}
+
+
+.secondary{
+  padding: 2em 5em;
+  background-color: #012340;;
+}
+
+.white{
+  padding: 2em 5em;
+  background-color: white;
+}
+
+.black{
+  padding: 2em 5em;
+  background-color: black;
+}
+
+
+.light{
+  padding: 2em 5em;
+  background-color: lightblue;
+}
+
+.page{
+  margin: 5em auto;
+  padding: 5em;
+}
+
+
+
+
+
+
+.main-nav{
+  padding: 4em;
+}
+
+.sub-nav{
+  padding: 2em;
+}
+
+.hero{
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  color:  white;
+}
+
+.home-body{
+  background-color: whitesmoke;
+}
+
+.overview{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card{
+  padding: 7em 2em;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: -100px;
+  color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+
+
+
+
+.primary-card{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+
+
+
+
+.tours{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.tours .small{
+  padding: 2em;
+}
+
+
+.tours .larger{
+  background-color: var(--secondary-color);
+  height: 300px;
+}
+
+.stadium{
+  position: relative;
+  top: -50px;
+}
+
+
+
+.club-news{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.news-section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.fans-card{
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+.news-card{
+  cursor: pointer;
+  background-color: white;
+  height: 350px;
+}
+
+
+
+
+
+.club-news{
+  border-bottom: 1px solid var(--secondary-color);
+  height: max-content;
+  padding-bottom: 6em;
+}
+
+.partners{
+  padding: 10em;
+}
+
+
+
+.form{
+  min-height: 90vh;
+  background-color: white;
+}
+
+.grid{
+  min-height: 100vh;
+}

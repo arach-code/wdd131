@@ -1,0 +1,59 @@
+
+
+.hero{
+  width: 100%;
+}
+
+
+main h1{
+  padding: 1em;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+
+}
+
+.players{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  padding: 1em 2em;
+}
+
+.players .player img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.players .player {
+  background-color: var(--secondary-color);
+  padding-bottom: 10px;
+}
+
+
+
+
+
+@media (min-width: 640px) {
+  
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .players{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+}
